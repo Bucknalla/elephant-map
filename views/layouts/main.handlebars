@@ -73,14 +73,13 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12" style="margin-left: 10px">
-						<p>{{{coords}}}</p>
 						<a href="#" class="btn btn-default" id="menu-toggle"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></a>
 
 						<a href="#" class="btn btn-default" id="elephant-toggle"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Show Elephants</a>
 
 						<a href="#" class="btn btn-default" id="path-toggle"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Show Path</a>
 
-						<a href="#" class="btn btn-default" id="date-toggle"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Show Dates</a>
+						<a href="#" class="btn btn-default" id="date-toggle">{{{coords.9.payload}}}</a>
 
 					</div>
                 </div>
@@ -112,13 +111,13 @@
     </script>
 	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
 	<script>
-	console.log()
+	console.log({{{coords.9.payload}}})
 
 	mapboxgl.accessToken = 'pk.eyJ1IjoiYnVja25hbGwiLCJhIjoiY2owY2hiZXF2MDAzZDJ4cDloaXM3ajIxbyJ9.0qvwIk1oHTeiOAa0WeCsQw';
 	var map = new mapboxgl.Map({
 	    container: 'map',
 	    style: 'mapbox://styles/mapbox/streets-v9',
-	    center: [-122.486052, 37.830348],
+	    center: [{{{coords.0.payload}}}],
 	    zoom: 15
 	});
 
@@ -135,27 +134,16 @@
 	                "geometry": {
 	                    "type": "LineString",
 	                    "coordinates": [
-	                        [-122.48369693756104, 37.83381888486939],
-	                        [-122.48348236083984, 37.83317489144141],
-	                        [-122.48339653015138, 37.83270036637107],
-	                        [-122.48356819152832, 37.832056363179625],
-	                        [-122.48404026031496, 37.83114119107971],
-	                        [-122.48404026031496, 37.83049717427869],
-	                        [-122.48348236083984, 37.829920943955045],
-	                        [-122.48356819152832, 37.82954808664175],
-	                        [-122.48507022857666, 37.82944639795659],
-	                        [-122.48610019683838, 37.82880236636284],
-	                        [-122.48695850372314, 37.82931081282506],
-	                        [-122.48700141906738, 37.83080223556934],
-	                        [-122.48751640319824, 37.83168351665737],
-	                        [-122.48803138732912, 37.832158048267786],
-	                        [-122.48888969421387, 37.83297152392784],
-	                        [-122.48987674713133, 37.83263257682617],
-	                        [-122.49043464660643, 37.832937629287755],
-	                        [-122.49125003814696, 37.832429207817725],
-	                        [-122.49163627624512, 37.832564787218985],
-	                        [-122.49223709106445, 37.83337825839438],
-	                        [-122.49378204345702, 37.83368330777276]
+	                        [{{{coords.0.payload}}}],
+	                        [{{{coords.1.payload}}}],
+	                        [{{{coords.2.payload}}}],
+							[{{{coords.3.payload}}}],
+							[{{{coords.4.payload}}}],
+							[{{{coords.5.payload}}}],
+							[{{{coords.6.payload}}}],
+							[{{{coords.7.payload}}}],
+							[{{{coords.8.payload}}}],
+							[{{{coords.9.payload}}}],
 	                    ]
 	                }
 	            }

@@ -1,31 +1,14 @@
 {
-  "name": "simple-express-static-server",
-  "version": "0.0.1",
-  "description": "A very simple static file server.",
-  "main": "server.js",
+  "name": "elephant-map",
   "scripts": {
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/spadin/simple-express-static-server.git"
-  },
-  "author": "Sandro Padin",
-  "contributors": [
-    "Luca Capra"
-  ],
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/spadin/simple-express-static-server/issues"
-  },
-  "homepage": "https://github.com/spadin/simple-express-static-server",
   "dependencies": {
     "body-parser": "^1.1.2",
     "errorhandler": "^1.0.1",
     "express": "^4.15.2",
-    "method-override": "^1.0.0"
-  },
-  "bin": {
-    "simple-server": "./start.js"
+    "method-override": "^1.0.0",
+	"express-handlebars":"^3.0.0",
+	"mongodb": "^2.2.25"
   }
 }
