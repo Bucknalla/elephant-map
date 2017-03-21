@@ -50,5 +50,5 @@ app.get("/", function (req, res) {
 });
 
 
-console.log("Simple static server showing listening at http://%s:%s", hostname, port);
-app.listen(port, hostname);
+console.log("Simple static server showing listening at %s", port);
+app.listen(port);
