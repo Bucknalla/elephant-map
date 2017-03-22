@@ -34,7 +34,7 @@ app.get("/", function (req, res) {
 		console.log("Connected to Mongo")
 		var collection = db.collection('gps')
 
-		collection.find().sort({ "_id" : -1}).limit(10).toArray(function (err, result) {
+		collection.find().sort({ "_id" : -1}).limit(100).toArray(function (err, result) {
 	      if (err) {
 	        console.log(err);
 	      } else if (result.length) {
